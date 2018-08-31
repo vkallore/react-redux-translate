@@ -17,6 +17,8 @@ const pusher = new Pusher({
 // Body parser middleware
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+// Below line of code is for build/sever.js
+// app.use(express.static(path.join(__dirname)))
 
 // CORS middleware
 app.use((req, res, next) => {
